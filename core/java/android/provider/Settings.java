@@ -1945,6 +1945,13 @@ public final class Settings {
             "bluetooth_discoverability";
 
         /**
+         * If all file types can be accepted over Bluetooth OBEX.
+         * @hide
+         */
+        public static final String BLUETOOTH_ACCEPT_ALL_FILES =
+            "bluetooth_accept_all_files";
+
+        /**
          * Bluetooth discoverability timeout.  If this value is nonzero, then
          * Bluetooth becomes discoverable for a certain number of seconds,
          * after which is becomes simply connectable.  The value is in seconds.
@@ -2104,6 +2111,12 @@ public final class Settings {
          * @hide
          */
         public static final String HEADS_UP_NOTIFCATION_DECAY = "heads_up_notification_decay";
+
+        /**
+         * Timeout for ambient display notification
+         * @hide
+         */
+        public static final String DOZE_TIMEOUT = "doze_timeout";
 
         /**
          * Defines the status and navigation bar color is battery safe mode is enabled.
@@ -3103,6 +3116,7 @@ public final class Settings {
             WIFI_STATIC_DNS2,
             BLUETOOTH_DISCOVERABILITY,
             BLUETOOTH_DISCOVERABILITY_TIMEOUT,
+            BLUETOOTH_ACCEPT_ALL_FILES,
             DIM_SCREEN,
             SCREEN_OFF_TIMEOUT,
             SCREEN_BRIGHTNESS,
